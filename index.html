@@ -7,6 +7,17 @@
     <!-- Daisy UI Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    
+
+
 </head>
 <body>
     <header class="w-[80%]  mx-auto">
@@ -23,10 +34,10 @@
                   <li><a href="">Search</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">P-Ticket</a>
+              <a class="btn btn-ghost text-4xl font-raleway font-extrabold">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
+              <ul class="menu menu-horizontal px-1 font-raleway text-xl font-medium">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Destination</a></li>
@@ -35,7 +46,7 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn">Bus<img src="images/bus-icon.png" alt=""></a>
+              <a class="btn font-raleway font-bold text-xl">Bus<img src="images/bus-icon.png" alt=""></a>
               
             </div>
           </div>
@@ -43,20 +54,91 @@
         
     </header>
     <main>
-        <section class="w-[80%] min-h-screen mx-auto relative" >
-            <div class="">
+        
+
+        <section class="w-[80%] min-h-screen mx-auto relative">
+            <div>
                 <img src="images/banner.png" alt="">
             </div>
-                <div class="absolute top-10 left-40">
-                    <h1 class="text-6xl font-extrabold text-[#ffffff]">End-to-End Travel with</h1>
-                    <h2 class="text-[#1dd100]">P Paribahan</h2>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque earum eius? Iste, libero eius?</p>
-                    <button class="">Buy Tickets</button>
-                </div>
-            
-            
+            <div class="absolute top-32 left-44 space-y-5">
+                <h1 class="text-6xl text-[#ffffff] font-extrabold font-raleway ">End-to-End Travel with</h1>
+                  <h2 class="text-[#1dd100] text-6xl font-extrabold font-raleway px-40">P Paribahan</h2>
+                  <p class="text-[#ffffff] text-xl font-normal font-Inter text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto <br>cupiditate aut impedit dicta at corporis ut expedita quia quaerat.</p>
+                  <button class="btn rounded-xl text-[#030712] text-2xl font-bold bg-[#1dd100] outline-none border-none font-raleway text-center mx-64">Buy Tickets</button>
+            </div>
 
         </section>
+
+       <section>
+        <div>
+            <h1 class="text-center mb-8">Best offers for you</h1>
+        </div>
+        <div class="flex gap-8 w-[80%] h-[20vh] mx-auto " >
+            <div class="flex gap-5 bg-[#FFBF0F] w-1/2 rounded-3xl">
+                <div class="p-6">
+                    <h1>15% OFF</h1>
+                    <h3>on your next purchase</h3>
+                    <p>use by January 2024</p>
+                    
+                </div>
+                <div class="">
+                    <img src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="p-6">
+                    <h1>NEW15</h1>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+
+
+            <div class="flex gap-5 bg-[#F78C9C] w-1/2 rounded-3xl">
+                <div class="p-6">
+                    <h1 class="font-Inter text-lg font-medium text-[#030712cc]">20% OFF</h1>
+                    <h3 class="text-[#030712cc] font-Inter font-semibold text-xl">on your next purchase</h3>
+                    <p class="text-[#03071280]">use by January 2024</p>
+                    
+                </div>
+                <div class="">
+                    <img src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="p-6">
+                    <h1>Couple 20</h1>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn rounded-xl border-2 border-solid border-[#1dd100] text-[#1dd100] mx-64 my-4">See All Offers</button>
+       </section>
+
+       <section>
+        <div>
+            <h1>P.H Paribahan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptate quod commodi porro nisi veritatis, ex inventore illum ea eius?
+            </p>
+        </div>
+        <div class="flex gap-8">
+            <div class="flex gap-8">
+                <div class="flex gap-5">
+                    <img src="images/bus-logo.png" alt="">
+                    <h1>Greenline Paribahan</h1>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+                <div>
+                    <img src="images/bus-logo.png" alt="">
+                    <p>40 Seats left</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="images/fare.png" alt="">
+                <h6>550 Taka</h6>
+                <p>Per Seat</p>
+            </div>
+
+        </div>
+       </section>
+
+        
 
     </main>
     <script src="scripts/scripts.js"></script>
