@@ -37,3 +37,9 @@ for(const seat of seats){
     })
 
 }
+
+const popupSection = document.getElementById('popup-section');
+popupSection.addEventListener('click',function(){
+    const modalSection = document.getElementById('modal-section');
+    modalSection.classList.remove('hidden');
+})
