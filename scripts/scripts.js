@@ -33,13 +33,54 @@ for(const seat of seats){
 
         tableSection.appendChild(tableRow);
 
+        const totalCost = document.getElementById('total-price').innerText;
+        const convertedTotalCost = parseInt(totalCost);
+        const ticketPrice = document.getElementById('ticket-price').innerText;
+        const convertedTicketPrice = parseInt(ticketPrice);
+        const sum = convertedTicketPrice + convertedTotalCost;
+        document.getElementById('total-price').innerText = sum;
+
+        const grandTotal = document.getElementById('grand-total').innerText;
+        const convertedGrandTotal = parseInt(grandTotal);
+        document.getElementById('grand-total').innerText = sum;
+
+        
+
+    
+
+       
+
         
     })
 
 }
 
-const popupSection = document.getElementById('popup-section');
-popupSection.addEventListener('click',function(){
-    const modalSection = document.getElementById('modal-section');
-    modalSection.classList.remove('hidden');
+const applyBtn = document.getElementById('apply-btn');
+applyBtn.addEventListener('click',function(){
+const inputField = document.getElementById('input-field').value;
+const couponCode = inputField.split(" ").join("").toUpperCase();
+if(couponCode==="NEW15")
+    inputField.classlist.add('hidden');
 })
+        
+
+
+
+
+
+// const popupSection = document.getElementById('popup-section');
+// popupSection.addEventListener('click',function(){
+//     const modalSection = document.getElementById('modal-section');
+   
+//     modalSection.classList.remove('hidden');
+  
+// })
+
+// const continueSection = document.getElementById('continue');
+// continueSection.addEventListener('click',function(){
+//     const modalSection = document.getElementById('modal-section');
+   
+  
+//     modalSection.classList.add('hidden');
+// })
+
