@@ -1,10 +1,13 @@
+// Adding background color
+
 const seats = document.getElementsByClassName('seats');
 for(const seat of seats){
     seat.addEventListener('click',function(){
         seat.style.backgroundColor = '#1dd100';
         const text = seat.innerText ;
-        console.log(text)
-     
+        console.log(text);
+
+        // Calculating seats left
         
         const seatNumber = document.getElementById('seat-number');
         const seatText = seatNumber.innerText;
@@ -12,11 +15,15 @@ for(const seat of seats){
         const newSeatNumber = convertedSeatNumber - 1;
         seatNumber.innerText = newSeatNumber;
 
+        // Calculating Selected seats
+
         const seatsIncrease = document.getElementById('seats-increase');
         const seatsIncreaseText = seatsIncrease.innerText;
         const convertedSeatsIncreaseText = parseInt(seatsIncreaseText);
         const newSeats = convertedSeatsIncreaseText + 1;
         seatsIncrease.innerText = newSeats;
+
+        // Showing by using Appendchild Method
 
         const tableSection = document.getElementById('table-section');
         const tableRow = document.createElement('tr');
@@ -33,12 +40,16 @@ for(const seat of seats){
 
         tableSection.appendChild(tableRow);
 
+        // Calculation of total cost
+
         const totalCost = document.getElementById('total-price').innerText;
         const convertedTotalCost = parseInt(totalCost);
         const ticketPrice = document.getElementById('ticket-price').innerText;
         const convertedTicketPrice = parseInt(ticketPrice);
         const sum = convertedTicketPrice + convertedTotalCost;
         document.getElementById('total-price').innerText = sum;
+
+        // Calculation of Grand total cost
 
         const grandTotal = document.getElementById('grand-total').innerText;
         const convertedGrandTotal = parseInt(grandTotal);
@@ -54,19 +65,26 @@ for(const seat of seats){
     })
 
 }
+//  conditions of making input field disable
 
 const applyBtn = document.getElementById('apply-btn');
 applyBtn.addEventListener('click',function(){
-const inputField = document.getElementById('input-field').value;
-const couponCode = inputField.split(" ").join("").toUpperCase();
-if(couponCode==="NEW15")
-    inputField.classlist.add('hidden');
-})
+const inputField = document.getElementById('input-field');
+const inputFieldValue = inputField.value;
+
+
+if(inputFieldValue==="NEW15" || inputFieldValue === "Couple 20"){
+    inputField.parentNode.removeChild(inputField);
+}else{
+    inputField.style.display = "block";
+}
+}
+)
         
 
 
 
-
+// showing popup modal
 
 // const popupSection = document.getElementById('popup-section');
 // popupSection.addEventListener('click',function(){
