@@ -7,6 +7,9 @@ for(const seat of seats){
         const text = seat.innerText ;
         console.log(text);
 
+      
+          
+
         // Calculating seats left
         
         const seatNumber = document.getElementById('seat-number');
@@ -54,14 +57,7 @@ for(const seat of seats){
         const grandTotal = document.getElementById('grand-total').innerText;
         const convertedGrandTotal = parseInt(grandTotal);
         document.getElementById('grand-total').innerText = sum;
-
-        
-
-    
-
-       
-
-        
+  
     })
 
 }
@@ -79,26 +75,35 @@ if(inputFieldValue==="NEW15" || inputFieldValue === "Couple 20"){
     inputField.style.display = "block";
 }
 }
+
+
 )
+
+
+
+
+
+
+   
         
 
 
 
 // showing popup modal
 
-// const popupSection = document.getElementById('popup-section');
-// popupSection.addEventListener('click',function(){
-//     const modalSection = document.getElementById('modal-section');
+const popupSection = document.getElementById('popup-section');
+popupSection.addEventListener('click',function(){
+    const modalSection = document.getElementById('modal-section');
    
-//     modalSection.classList.remove('hidden');
+    modalSection.classList.remove('hidden');
   
-// })
+})
 
-// const continueSection = document.getElementById('continue');
-// continueSection.addEventListener('click',function(){
-//     const modalSection = document.getElementById('modal-section');
+const continueSection = document.getElementById('continue');
+continueSection.addEventListener('click',function(){
+    const modalSection = document.getElementById('modal-section');
    
   
-//     modalSection.classList.add('hidden');
-// })
+    modalSection.classList.add('hidden');
+})
 
